@@ -1,0 +1,176 @@
+* {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia;
+    line-height: 1.4em;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background: #028E9B;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+nav {
+    background: #1E6D74;
+}
+
+nav ul {
+    background: #1E6D74;
+}
+
+nav > ul {
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: 15%;
+}
+
+nav > ul > li {
+    float: left;
+    list-style: none;
+    
+    
+}
+
+nav > ul > li:hover {
+    transition: padding-left 0.3s;
+}
+
+nav > ul > li > a {
+    color: #FFDD00;
+    padding: 10px;
+    display: block;
+    border-right: 2px solid #FFDD00;
+}
+
+nav > ul > li:first-child > a {
+    border-left: 2px solid #FFDD00;
+}
+
+nav > ul > li > a:hover {
+    color: white;
+    background-color: black;
+    transition: background-color 0.8s ease-out;
+}
+
+nav > ul > li > a:focus {
+    color: #34D1B2;
+}
+
+nav > ul > li:focus-within > a {
+    color: #34D1B2;
+}
+
+nav > ul > li > ul {
+    display: none;
+    padding-right: 5px;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+
+nav > ul > li > ul > li > a {
+    color: #FF9A40;
+}
+
+nav > ul > li > ul > li > a:hover {
+    color: white;
+    background: black;
+}
+
+nav > ul > li > ul > li > ul {
+    display: none;
+}
+
+nav > ul > li > ul > li:hover ul {
+    display: block;
+}
+
+nav > ul > li >  ul > li > a:focus {
+    color: #34D1B2;
+    
+}
+
+nav > ul > li >  ul > li:focus-within > a {
+    color: #34D1B2;
+}
+
+nav > ul > li > ul > li > ul > li > a {
+    color: #FFB573;
+}
+
+nav > ul > li > ul > li > ul > li > a:hover {
+    color: white;
+    background: black;
+}
+
+nav > ul > li > ul > li > ul > li > a:focus {
+    color: #34D1B2;
+}
+
+header h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-indent: 40px;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main > p {
+    flex-basis: 48%;
+    padding: 10px;
+}
+
+main > div {
+    flex-basis: 48%;
+}
+
+main > div > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 15px solid #A64E00;
+    margin: auto auto;
+}
+
+main > div > img:hover {
+    transform: scale(1.05);
+} 
+
+.flex-basis-96 {
+    flex-basis: 96%;
+}
+
+main > ol, main > ul {
+    background: #A60000;
+    flex-basis: 48%;
+    display: block;
+}
+
+main > h2 + p {
+    color: #ccc;
+}
+
+
+footer {
+    text-transform: uppercase;
+    margin-top: 15px;
+}
